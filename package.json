@@ -1,0 +1,30 @@
+{
+	"name": "cy-cucumber-bdd",
+	"version": "1.0.0",
+	"description": "A Cypress with Cucumber Example",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:tests": "cypress run"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ferisjuan/cypress-cucumber-BDD.git"
+	},
+	"keywords": [
+		"Cypress",
+		"Cucumber",
+		"BDD"
+	],
+	"author": "Juan Feris",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ferisjuan/cypress-cucumber-BDD/issues"
+	},
+	"homepage": "https://github.com/ferisjuan/cypress-cucumber-BDD#readme",
+	"dependencies": {
+		"cypress": "^5.5.0",
+		"cypress-cucumber-preprocessor": "^4.0.0",
+		"prettier": "^2.1.2"
+	}
+}
