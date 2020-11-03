@@ -26,5 +26,8 @@
 		"cypress": "^5.5.0",
 		"cypress-cucumber-preprocessor": "^4.0.0",
 		"prettier": "^2.1.2"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true
 	}
 }
