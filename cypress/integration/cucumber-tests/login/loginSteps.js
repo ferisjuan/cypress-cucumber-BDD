@@ -7,9 +7,15 @@ Given('I open login page', () => {
 	LoginPage.visitLoginPage()
 })
 
-When('I submit login', () => {
-	LoginPage.fillUsername()
-	LoginPage.fillPassword()
+When('I fill username with {string}', username => {
+	LoginPage.fillUsername(username)
+})
+
+When('I filll password with {string}', password => {
+	LoginPage.fillPassword(password)
+})
+
+When('I click on submit login', () => {
 	LoginPage.submitForm()
 })
 

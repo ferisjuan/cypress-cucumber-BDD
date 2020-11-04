@@ -8,11 +8,11 @@ class LoginPage {
 		cy.visit(URL)
 	}
 
-	static fillUsername() {
-		cy.get(USERNAME).type('username')
+	static fillUsername(username) {
+		cy.get(USERNAME).type(username)
 	}
-	static fillPassword() {
-		cy.get(PASSWORD).type('password')
+	static fillPassword(password) {
+		cy.get(PASSWORD).type(password)
 	}
 
 	static submitForm() {
