@@ -1,13 +1,16 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 
+// Classes
+import LoginPage from './LoginPage'
+
 Given('I open login page', () => {
-	cy.visit('http://zero.webappsecurity.com/login.html')
+	LoginPage.visitLoginPage()
 })
 
 When('I submit login', () => {
-	cy.get('#user_login').type('username')
-	cy.get('#user_password').type('password')
-	cy.get('input[name="submit"]').click()
+	LoginPage.fillUsername()
+	LoginPage.fillPassword()
+	LoginPage.submitForm()
 })
 
 Then('I should see homepage', () => {
